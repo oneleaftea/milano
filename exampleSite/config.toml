@@ -30,4 +30,5 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "A website built through Hugo."
+    font = "Raleway" # should match the name on Google Fonts
     footer = "&copy; [YourName](https://yoururl.com) 2017 | [Github](https://github.com/oneleaftea) | [Twitter](https://twitter.com/xieyihui)"
