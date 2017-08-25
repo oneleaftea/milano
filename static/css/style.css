@@ -12,20 +12,19 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.menu, footer { 
+.menu { 
     text-align: center; 
     padding:0px;}
 .article-meta { 
 	text-align: center;
-	line-height:60%;
-	padding-top: 5px;
-	padding-bottom: 20px
+	line-height:0.7em;
+	padding-bottom: 1.2em;
 	}
 .title { 
 	font-size: 1.1em; 
-	line-height: 90%
+	line-height: .9em;
 	}
-.comment { text-align: center; }
+.comment, footer { text-align: center; }
 footer a { text-decoration: none; }
 hr {
   border-style: dashed;
