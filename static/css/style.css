@@ -24,7 +24,7 @@ body {
 	font-size: 1.1em; 
 	line-height: .9em;
 	}
-.comment, footer { text-align: center; }
+.comment, .related, footer { text-align: center; }
 footer a { text-decoration: none; }
 hr {
   border-style: dashed;
