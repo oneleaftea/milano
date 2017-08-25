@@ -1,5 +1,6 @@
 <style>
     html body {font-family: {{ .Site.Params.font }}, Verdana, Arial, sans-serif;}
+    :root {--accent: {{ .Site.Params.accent | default "#0078ff" }};}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font }}">

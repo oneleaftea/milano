@@ -12,7 +12,9 @@ body {
   padding: 5px;
   border-radius: 5px;
 }
-.menu, footer { text-align: center; }
+.menu, footer { 
+    text-align: center; 
+    padding:0px;}
 .article-meta { 
 	text-align: center;
 	line-height:60%;
@@ -32,7 +34,7 @@ hr {
 
 /* links */
 a:link, a:visited {
-    color: #0078ff;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -41,7 +43,7 @@ a.icon:hover {
 }
 
 a:hover {
-    color: #0078ff;
+    color: var(--accent);
     text-decoration: underline;
 }
 
@@ -78,6 +80,15 @@ blockquote {
 .copyright {
     margin: 15px 0;
     font-size: .85em;
+}
+
+.pages {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.pages-icon {
+    padding: 0 15px;
 }
 
 table {
