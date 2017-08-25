@@ -2,6 +2,8 @@
 
 ### _a minimal hugo theme_
 
+For a live demo, visit this [demo site](https://milano.thechens.org/).
+
 **Milano** is a Hugo theme based on [Xmin](https://xmin.yihui.name/) by [Yihui Xie](https://yihui.name). In the spirit of Xmin, this theme does not use any javascript or use any complex css like bootstrap. However, several changes were made to the layout and features available in this theme. 
 
 A number of features added:
@@ -17,4 +19,4 @@ A number of features added:
 
 As with Xmin, it is fully functional. It supports pages (including the home page), blog posts, a navigation menu, categories, tags, and RSS. 
 
-All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](/post/). See the [About](/page/about/) page for the usage of this theme.
+All pages not under the root directory of the website are listed below. You can also visit the list page of a single section, e.g., [posts](https://milano.thechens.org/post/). See the [About](https://milano.thechens.org/page/about/) page for the usage of this theme.
