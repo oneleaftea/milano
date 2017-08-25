@@ -36,6 +36,15 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+a.icon:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0078ff;
+    text-decoration: underline;
+}
+
 /* code */
 pre {
   border: 1px solid #ddd;
