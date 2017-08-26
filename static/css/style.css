@@ -7,22 +7,27 @@ body {
 
 /* header and footer areas */
 .menu li { display: inline-block; }
-.article-meta, .menu a {
+.article-meta {
+  padding: 15px;
+}
+.menu a {
   text-decoration: none;
   padding: 5px;
-  border-radius: 5px;
 }
 .menu { 
     text-align: center; 
     padding:0px;}
 .article-meta { 
 	text-align: center;
-	line-height:0.7em;
 	padding-bottom: 1.2em;
 	}
 .title { 
-	font-size: 1.1em; 
-	line-height: .9em;
+	font-weight: bold;
+	font-size: 2.25rem;
+	line-height: 1em;
+	}
+.date {
+	margin: 2px;
 	}
 .comment, .related, footer { text-align: center; }
 footer a { text-decoration: none; }

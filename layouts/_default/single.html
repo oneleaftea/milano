@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <div class="article-meta">
-<h1><span class="title">{{ .Title }}</span></h1>
-{{ if .Params.date }}<h4 class="date">{{ .Date.Format "January 2, 2006" }}</h4>{{ end }}
+<span class="title">{{ .Title }}</span>
+{{ if .Params.date }}<div class="date">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
 {{ range .Params.tags }} <kbd class="item-tag">
 	<a href='{{ "tags/" |  relURL }}{{ . | urlize }}'>{{ . }}</a></kbd>{{ end }}
 </div>
