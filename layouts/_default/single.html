@@ -1,20 +1,23 @@
 {{ partial "header.html" . }}
+
 <div class="article-meta">
-<span class="title">{{ .Title }}</span>
-{{ if .Params.date }}<div class="meta">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
-{{ $catlist := .Params.categories }}
-{{ if $catlist }}
-<div class="meta">[ {{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}
-		<a href='{{ "categories/" |  relURL }}{{ . | urlize }}'>{{ . }}</a>{{ end }} ]
-</div>
-{{ end }}
-{{ range .Params.tags }} <kbd class="item-tag">
-	<a href='{{ "tags/" |  relURL }}{{ . | urlize }}'>{{ . }}</a></kbd>{{ end }}
+	<span class="title">{{ .Title }}</span>
+	{{ if .Params.date }}
+		<div class="meta">{{ .Date.Format "January 2, 2006" }}</div>
+	{{ end }}
+	{{ $catlist := .Params.categories }}
+	{{ if $catlist }}
+		<div class="meta">
+			[ {{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}
+			<a href='{{ "categories/" |  relURL }}{{ . | urlize }}'>{{ . }}</a>{{ end }} ]
+		</div>
+	{{ end }}
+	{{ range .Params.tags }}<kbd class="item-tag">
+		<a href='{{ "tags/" |  relURL }}{{ . | urlize }}'>{{ . }}</a></kbd>
+	{{ end }}
 </div>
 
-<main>
-{{ .Content }}
-</main>
+<main>{{ .Content }}</main>
 
 <!-- related posts with the same tags -->
 {{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
@@ -32,7 +35,6 @@
     
 {{ if and .Site.DisqusShortname (not .Params.disableComments) }}
 	<h4 class="comment">Comments</h4>
-
 	{{ template "_internal/disqus.html" . }}
 {{ end }}
 
