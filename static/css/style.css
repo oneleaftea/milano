@@ -7,9 +7,6 @@ body {
 
 /* header and footer areas */
 .menu li { display: inline-block; }
-.article-meta {
-  padding: 15px;
-}
 .menu a {
   text-decoration: none;
   padding: 5px;
@@ -19,14 +16,14 @@ body {
     padding:0px;}
 .article-meta { 
 	text-align: center;
-	padding-bottom: 1.2em;
+	padding: 18px;
 	}
 .title { 
 	font-weight: bold;
 	font-size: 2.25rem;
 	line-height: 1em;
 	}
-.date {
+.meta {
 	margin: 2px;
 	}
 .comment, .related, footer { text-align: center; }

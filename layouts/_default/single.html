@@ -1,7 +1,13 @@
 {{ partial "header.html" . }}
 <div class="article-meta">
 <span class="title">{{ .Title }}</span>
-{{ if .Params.date }}<div class="date">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
+{{ if .Params.date }}<div class="meta">{{ .Date.Format "January 2, 2006" }}</div>{{ end }}
+{{ $catlist := .Params.categories }}
+{{ if $catlist }}
+<div class="meta">[ {{ range $i, $e := .Params.categories }}{{ if $i }}, {{ end }}
+		<a href='{{ "categories/" |  relURL }}{{ . | urlize }}'>{{ . }}</a>{{ end }} ]
+</div>
+{{ end }}
 {{ range .Params.tags }} <kbd class="item-tag">
 	<a href='{{ "tags/" |  relURL }}{{ . | urlize }}'>{{ . }}</a></kbd>{{ end }}
 </div>
