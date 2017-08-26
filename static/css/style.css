@@ -7,47 +7,25 @@ body {
 
 /* header and footer areas */
 .menu li { display: inline-block; }
-.menu a {
-  text-decoration: none;
-  padding: 5px;
-}
-.menu { 
-    text-align: center;
-    padding:0px;
-    }
-.article-meta { 
-	text-align: center;
-	padding: 18px;
-	}
+.menu a {padding: 5px;}
+.menu {padding:0px;}
+.article-meta {padding: 18px;}
 .title { 
 	font-weight: bold;
 	font-size: 2.25rem;
 	line-height: 1em;
 	}
-.meta {
-	margin: 2px;
-	}
-.comment, .related, footer { text-align: center; }
-footer a { text-decoration: none; }
+.meta {margin: 2px;}
+.menu, .article-meta, .comment, .related, footer { text-align: center; }
 hr {
   border-style: dashed;
   color: #ddd;
 }
 
 /* links */
-a:link, a:visited {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-a.icon:hover {
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent);
-    text-decoration: underline;
-}
+a:link, a:visited, a:hover {color: var(--accent);}
+.menu a, footer a, a.icon:hover, a:link, a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 /* code */
 pre {
@@ -72,7 +50,6 @@ blockquote {
     border-width: 1px;
     border-color: #828892;
     border-style: solid;
-    background-color: #ffffff;
     font-size: .9em;
     box-shadow: none;
     padding: 4px;
@@ -89,9 +66,7 @@ blockquote {
     text-align: center;
 }
 
-.pages-icon {
-    padding: 0 15px;
-}
+.pages-icon {padding: 0 15px;}
 
 table {
   margin: auto;
