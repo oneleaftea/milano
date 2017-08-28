@@ -24,12 +24,8 @@
 
 {{ if $related }}
 	<h4 class="related">Related Posts</h4>
-
 	{{ range $related }}
-	 <li>
-		<span class="date">{{ .Date.Format "2006/01/02" }}</span>
-		<a href="{{ .URL }}">{{ .Title }}</a>
-	 </li>
+		{{ partial "list-item" . }}
 	{{ end }}
 {{ end }}
     

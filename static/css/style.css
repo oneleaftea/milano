@@ -27,29 +27,25 @@ a:link, a:visited, a:hover {color: var(--accent);}
 .menu a, footer a, a.icon:hover, a:link, a:visited {text-decoration: none;}
 a:hover {text-decoration: underline;}
 
-/* code */
+/* code and blockquote */
 pre {
   border: 1px solid #ddd;
-  background: #f7f7f7;
   padding: 1em;
   overflow-x: auto;
 }
-code { background: #f9f9f9; }
+pre, code, blockquote { background: #f7f7f7; }
 pre code { background: none; }
-
-/* misc elements */
-img, iframe, video { max-width: 100%; }
-main { hyphens: auto; }
 blockquote {
-  background: #f9f9f9;
   border-left: 5px solid #ccc;
   padding: 3px 1em 3px;
 }
 
+/* misc elements */
+img, iframe, video { max-width: 100%; }
+main { hyphens: auto; }
+
 .item-tag {
-    border-width: 1px;
-    border-color: #828892;
-    border-style: solid;
+	border: 1px solid #828892;
     font-size: .9em;
     box-shadow: none;
     padding: 4px;
