@@ -72,3 +72,36 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee }
+
+/* post navigation */
+.post-nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #ddd;
+}
+
+.post-nav__caption {
+	display: block;
+	font-weight: bold;
+	line-height: 1rem;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+.post-nav__title-left {
+	margin-right: 5px;
+}
+
+.post-nav__title-left, .post-nav__title-right {
+	font-size: .95rem;
+	overflow: hidden;
+	margin-top:5px;
+}
+
+.post-prev {}
+.post-next {
+	text-align: right;
+}
