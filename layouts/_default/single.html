@@ -19,7 +19,9 @@
 
 <main>{{ .Content }}</main>
 
-{{ partial "post_nav.html" . }}
+{{ if not .Params.nav_off }}
+	{{ partial "post_nav.html" . }}
+{{ end }}
 
 <!-- related posts with the same tags -->
 {{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
