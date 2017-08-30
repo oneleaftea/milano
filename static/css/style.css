@@ -87,7 +87,6 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 	display: block;
 	font-weight: bold;
 	line-height: 1rem;
-	text-transform: uppercase;
 	overflow: hidden;
 }
 

@@ -2,19 +2,21 @@
 
 ### _a minimal hugo theme_
 
+
 For a live demo, visit this [demo site](https://milano.thechens.org/).
 
 **Milano** is a Hugo theme based on [Xmin](https://xmin.yihui.name/) by [Yihui Xie](https://yihui.name). In the spirit of Xmin, this theme does not use any javascript or use any complex css like bootstrap. However, several changes were made to the layout and features available in this theme. 
 
 A number of features added:
 
-* Added support for **clickable tags** to show in posts
+* Added support for **clickable tags and categories** to show in posts
 * Added support for **Google Fonts**. Simply add your favorite Google font in ```config.toml```
 * Added **social media links** to the footer, using Font-Awesome
 * Added **pagination** to ```list.html``` with customization available in ```config.toml```. This adds arrows to the bottom of the homepage as well as other list pages (e.g. ```/post/```)
 * Added **Disqus** and **Google Analytics** Support (just add your short-name and GA site-id to ```config.toml```)
 * Added highlighting option (see accent parameter in ```config.toml```)
 * Added **Related Posts** feature
+* Added **Post Navigation** below posts
 * Made modifications to the overall look and style
 
 As with Xmin, it is fully functional. It supports pages (including the home page), blog posts, a navigation menu, categories, tags, and RSS. 
