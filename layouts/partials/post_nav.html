@@ -1,23 +1,23 @@
 {{- if .Site.Params.post_navigation }}
 {{- if or (.PrevInSection) (.NextInSection) }}
 <nav class="post-nav">
-	{{- if .PrevInSection }}
 	<div class="post-prev">
+	{{- if .PrevInSection }}
 		<a href="{{.PrevInSection.RelPermalink}}" rel="prev">
 			<span class="post-nav__caption">
-				«Older
+				« Older
 			</span>
 			<p class="post-nav__title-left">
 				{{.PrevInSection.Title}}
 			</p>
 		</a>
-	</div>
 	{{- end }}
+	</div>
 	{{- if .NextInSection }}
 	<div class="post-next">
 		<a href="{{.NextInSection.RelPermalink}}" rel="next">
 			<span class="post-nav__caption">
-				Newer»
+				Newer »
 			</span>
 			<p class="post-nav__title-right">
 				{{.NextInSection.Title}}
