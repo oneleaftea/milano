@@ -1,0 +1,35 @@
+---
+title: Test-Blogdown
+author: ~
+date: '2017-07-29'
+slug: test-blogdown
+categories: [R]
+tags: [R, blogdown]
+---
+```{r setup, include=FALSE}
+library(tidyverse)
+library(cowplot)
+```
+
+
+####This is a test R blogdown post
+
+```{r}
+print("Hello World")
+```
+
+
+```{r, echo=FALSE}
+print("Hello World without code shown")
+```
+
+```{r}
+test <- mtcars %>% group_by(cyl) %>%
+  summarize(AveMpg = mean(mpg))
+
+
+ggplot(data=test, mapping=aes(x=cyl, y=AveMpg)) +
+  geom_line(stat="identity")
+```
+
+

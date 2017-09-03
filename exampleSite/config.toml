@@ -1,10 +1,11 @@
-baseurl = "/"
+baseurl = "https://example.com/"
 languageCode = "en-us"
 title = "A minimal Hugo website"
 theme = "milano"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+paginate = "10"
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
@@ -15,6 +16,10 @@ footnotereturnlinkcontents = "↩"
     name = "Home"
     url = "/"
     weight = -100
+[[menu.main]]
+    name = "Blog"
+    url = "/post/"
+    weight = -75
 [[menu.main]]
     name = "Categories"
     url = "/categories/"
@@ -30,5 +35,42 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "A website built through Hugo."
+    accent = "#0078ff"
+    post_navigation = true
     font = "Raleway" # should match the name on Google Fonts
-    footer = "&copy; [YourName](https://yoururl.com) 2017 | [Github](https://github.com/oneleaftea) | [Twitter](https://twitter.com/xieyihui)"
+    footer = "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io/) and [Milano](https://github.com/oneleaftea/milano)"
+
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+    url = "mailto:me@example.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/oneleaftea/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/username/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/user-name-a123456789/"
+    name = "linkedin"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://www.facebook.com/username/"
+    name = "facebook"
+    weight = 5
+
+
+[[menu.icon]]
+    url = "https://www.stackoverflow.com/username/"
+    name = "stack-overflow"
+    weight = 5
