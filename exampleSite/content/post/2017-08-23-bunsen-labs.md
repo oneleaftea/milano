@@ -1,6 +1,6 @@
 +++
 title = "Introducing Bunsenlabs"
-date = 2017-08-23
+date = "2017-08-23"
 tags = ["distros", "linux"]
 categories = ["Linux"]
 disableComments = false

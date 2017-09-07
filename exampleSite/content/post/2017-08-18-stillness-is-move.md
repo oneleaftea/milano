@@ -1,6 +1,6 @@
 +++
 title = "The Stillness is the Move"
-date = 2017-08-18
+date = "2017-08-18"
 tags = [ "lyrics", "dirty-projectors" ]
 categories = [ "Misc" ]
 disableComments = false

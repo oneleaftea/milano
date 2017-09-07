@@ -1,6 +1,6 @@
 +++
 title = "A Great Blogdown Tutorial"
-date = 2017-08-24
+date = "2017-08-24"
 tags = ["blogdown","R"]
 categories = ["R"]
 disableComments = false

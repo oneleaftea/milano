@@ -1,6 +1,6 @@
 +++
 title = "Markdown Tables Demo"
-date = 2017-08-26
+date = "2017-08-26"
 tags = ["markdown", "blogging"]
 categories = ["Development"]
 disableComments = false

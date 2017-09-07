@@ -1,6 +1,6 @@
 +++
 title = "Markdown Header Test"
-date = 2017-08-25
+date = "2017-08-25"
 tags = [ "blogging", "markdown" ]
 categories = [ "Development"]
 disableComments = false

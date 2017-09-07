@@ -1,6 +1,6 @@
 +++
 title = "Mark David Chapman by T.O.D."
-date = 2017-08-28
+date = "2017-08-28"
 tags = ["lyrics", "trail-of-dead"]
 categories = ["Misc"]
 disableComments = false

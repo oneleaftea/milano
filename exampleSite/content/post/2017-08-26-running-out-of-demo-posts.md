@@ -1,6 +1,6 @@
 +++
 title = "Running Out of Demo Posts"
-date = 2017-08-26
+date = "2017-08-26"
 tags = ["stupid"]
 categories = ["Misc"]
 disableComments = false

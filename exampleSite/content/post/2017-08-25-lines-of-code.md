@@ -1,6 +1,6 @@
 +++
 title = "Milano Has 230 Lines of Code"
-date = 2017-08-25
+date = "2017-08-25"
 tags = ["linux","hugo"]
 categories = ["Linux", "Development"]
 disableComments = false
