@@ -4,7 +4,7 @@
 	<h1>{{ .Title }}</h1>
 {{ end }}
 
-{{ .Content }}
+<main>{{ .Content }}</main>
 
 <ul>
 	{{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}

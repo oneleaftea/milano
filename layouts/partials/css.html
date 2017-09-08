@@ -1,7 +1,9 @@
 <style>
-    html body {font-family: {{ .Site.Params.font }}, Verdana, Arial, sans-serif;}
+    html body, h1, h2, h3, h4, h5, h6 {font-family: {{ .Site.Params.font_title }}, Verdana, Arial, sans-serif;}
+    main {font-family: {{ .Site.Params.font }}, Verdana, Arial, sans-serif;}
     :root {--accent: {{ .Site.Params.accent | default "#0078ff" }};}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font_title }}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
