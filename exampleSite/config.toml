@@ -38,7 +38,7 @@ footnotereturnlinkcontents = "↩"
     accent = "#0078ff"
     post_navigation = true
     font_title = "Raleway" # should match the name on Google Fonts
-    font = "Merriweather" # should match the name on Google Fonts
+    font = "Proxima Nova" # should match the name on Google Fonts
     footer = "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io/) and [Milano](https://github.com/oneleaftea/milano)"
 
 # Social icons to be shown on the right-hand side of the navigation bar
