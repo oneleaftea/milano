@@ -37,7 +37,7 @@ footnotereturnlinkcontents = "↩"
     description = "A website built through Hugo."
     accent = "#0078ff"
     post_navigation = true
-	font_title = "Raleway" # should match the name on Google Fonts
+    font_title = "Raleway" # should match the name on Google Fonts
     font = "PT Serif" # should match the name on Google Fonts
     footer = "&copy; All rights reserved. Powered by [Hugo](https://gohugo.io/) and [Milano](https://github.com/oneleaftea/milano)"
 
