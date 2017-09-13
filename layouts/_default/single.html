@@ -24,11 +24,11 @@
 {{ end }}
 
 <!-- related posts with the same tags -->
-{{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+{{ $related := .Site.RegularPages.Related . | first 5 }}
 
-{{ if $related }}
+{{ with $related }}
 	<h4 class="related">Related Posts</h4>
-	{{ range $related }}
+	{{ range . }}
 		{{ partial "list-item" . }}
 	{{ end }}
 {{ end }}
