@@ -14,7 +14,6 @@ A number of features added:
 * Added **social media links** to the footer, using Font-Awesome
 * Added **pagination** to ```list.html``` with customization available in ```config.toml```. This adds arrows to the bottom of the homepage as well as other list pages (e.g. ```/post/```)
 * Added **Disqus** and **Google Analytics** Support (just add your short-name and GA site-id to ```config.toml```)
-* Added highlighting option (see accent parameter in ```config.toml```)
 * Added **Related Posts** feature
 * Added **Post Navigation** below posts
 * Made modifications to the overall look and style

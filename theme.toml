@@ -5,7 +5,7 @@ description = "A minimal Hugo theme based on Yihui Xie's Xmin"
 homepage = "https://github.com/oneleaftea/milano"
 tags = ["minimal", "blog", "personal", "clean", "simple", "starter", "minimalist"]
 features = ["blog"]
-min_version = "0.18"
+min_version = "0.27"
 
 [author]
   name = "Yudy Chen"
