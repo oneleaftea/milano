@@ -7,7 +7,11 @@
 <main>{{ .Content }}</main>
 
 <ul>
-	{{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}
+	{{ $pages := .Pages }}
+	{{ if .IsHome }}
+		{{ $pages = .Site.RegularPages }}
+	{{ end }}
+	{{ $paginator := .Paginate (where $pages "Type" "in" site.Params.mainSections) }}
 	{{ range $paginator.Pages }} 
 		{{ partial "list-item" . }}
 	{{ end }}
