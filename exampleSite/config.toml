@@ -8,6 +8,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 paginate = "10"
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
+RelativeURLs=true
+CanonifyURLs=true
+mainSections = ["post"]
 
 [permalinks]
     post = "/post/:slug/"
